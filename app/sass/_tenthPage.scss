@@ -1,0 +1,65 @@
+.tenthPage {
+	@include row;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+    width: 100%;
+    //height: 100vh;
+    height: auto; 
+    background: linear-gradient(to right, $whiteClay, $white);
+
+    .tenthPage-container {
+    	@include container;
+		@include row;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		height: 100%;
+
+		.pic {
+			position: absolute;
+			bottom: 0;
+		}
+
+		.pic-men {
+			left: -70px;
+		}
+
+		.pic-woman {
+			right: 0;
+		}
+
+		.contacts {
+			@include row;
+			flex-direction: column;
+			//justify-content: space-between;
+			align-items: center;
+			// font-size: 18px;
+			margin-top: 25px;
+
+			.address {
+				font-family: $robotoReg;
+				margin-bottom: 10px;
+			}
+
+			.phone {
+				font-family: $robotoBold;
+			}
+		}
+
+		.foc-partner {			
+			margin: 45px 0;
+			padding: 20px;
+
+			.foc-input-partner {							
+				color: $black;
+				border-bottom: 1px solid $black;	
+
+				// &:active, &:focus {
+				//     border-bottom: 1px solid $lemonTree;
+				// }
+			}			
+		}
+    }
+
+}

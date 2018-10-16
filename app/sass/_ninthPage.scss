@@ -1,0 +1,32 @@
+.ninthPage {
+	@include row;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center; 
+    width: 100vw;
+    height: 100vh;
+    // height: 797px;
+    // height: 594px;
+
+    #map {
+        width: 100vw;
+        height: 100vh;
+        // height: 897px;
+        position: absolute;
+        // background-color: $wetAsphalt;
+    }
+
+    .ninthPage-container {
+    	@include container;
+		@include row;
+        flex-direction: column;
+		justify-content: start;
+		align-items: center;
+        z-index: 1;
+
+        .page-title {
+            color: $white;
+        }
+    }
+
+}

@@ -1,0 +1,67 @@
+.sixthPage {
+	@include row;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+    width: 100%;
+    // height: 100vh;
+    height: 797px;
+
+    .sixthPage-container {
+    	@include container;
+		@include row;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		height: 100%;
+		font-family: $robotoBold;
+		// font-size: 18px;
+		color: $darkGray;
+		// z-index: 1;
+
+		.btn-container {
+			position: absolute;
+			bottom: 0;
+
+			.above-btn-text {
+				@include row;
+				justify-content: center;
+				align-items: center;
+				font-family: $robotoReg;
+				color: $black;
+				background: url('../images/sixthPage-blue-triangle.png') no-repeat;
+				background-size: contain;
+				width: 424px;
+				height: 209px;
+				position: relative;
+				bottom: -59px;
+				left: 5px;
+				z-index: -1;
+				padding-top: 15px;
+			}
+
+			.calc-btn {	 
+	            color: $black;
+	            background: url('../images/sixthPage-button.png') no-repeat;
+	            background-size: contain;
+	            width: 410px;
+	            height: 44px;
+	        }
+		}
+
+		.squares-left {
+	        position: absolute;
+	        right: calc(50% + 490px);
+	        bottom: 0;
+	        // z-index: -1;
+	    }
+
+	    .squares-right {
+	        position: absolute;
+	        left: calc(50% + 470px);
+	        top: -315px;
+	    }
+    }
+
+    
+}

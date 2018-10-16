@@ -1,0 +1,111 @@
+.thirdPage {
+	@include row;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+    width: 100%;
+    // height: 100vh;
+    height: 797px;
+    background: url('../images/thirdPage_background.png') center 0 no-repeat;
+    // background-size: contain;
+    z-index: 1;
+
+    .thirdPage-container {
+    	@include container;
+		@include row;
+        flex-direction: column;
+		justify-content: start;
+		align-items: center;
+        height: 100%;
+
+        .page-title {
+            color: $white;
+        }
+
+        .thirdPage-slider {
+            @include row;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        
+            .slider-body {
+                @include container;
+                @include row;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                // align-content: center;
+                // width: auto;
+                height: auto;
+                margin-top: 20px;
+
+                .slide-title {
+                    font-family: $robotoBold;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+
+                .slide {
+                    @include row;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 980px;
+                    height: 475px;
+                    background-color: $lemonTree;
+                    font-family: $robotoReg;
+                    font-size: 14px;
+                    // line-height: 2;
+                    color: $black;
+
+                    .slide-text-left,
+                    .slide-image,
+                    .slide-text-right {
+                        position: relative;
+                        top: 20px;
+                    }
+
+                    .slide-text-left,
+                    .slide-text-right {
+                        width: 275px; 
+
+                            li {
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .slide-text-left {
+                        text-align: left;
+                        // margin-top: 20px;
+                        margin-left: 35px;
+                    }
+
+                    .slide-image {
+                        // height: 260px;
+                        width: 175px;
+                        height: auto;
+                        // width: auto;
+                        // margin: 0 50px;
+                        // position: relative;
+                        // top: 20px;                  
+                    }
+
+                    .slide-text-right {
+                        text-align: right; 
+                        // margin-top: 20px;
+                        margin-right: 35px;
+                    }
+
+                    .iframe-container {
+                        @include row;
+                        justify-content: space-evenly;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

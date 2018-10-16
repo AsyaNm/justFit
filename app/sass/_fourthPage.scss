@@ -1,0 +1,108 @@
+.fourthPage {
+	@include row;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+    width: 100%;
+    // height: 100vh;
+    height: 797px;
+    // background: url('../images/fourthPage-background-rhombuses.png') no-repeat;
+    // background-position-x: calc(50% + 20px);
+    // background-position-y: -380px;    
+    overflow: hidden;
+
+    .fourthPage-container {
+    	@include container;
+		@include row;
+        flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+        height: 100%;
+
+        .fourthPage-content {
+            @include row;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: flex-start;
+            width: 100%;
+            font-family: $robotoReg;
+            // font-size: 18px;
+
+            .paragraph {
+                @include row;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                position: relative;
+                // height: 405px;
+
+                .paragraph-item {
+                    @extend .animated-link;                    
+                    font-size: 24px;
+                    color: $grayDarkerMedium;
+                    text-transform: uppercase;                    
+                    padding-right: 100px;
+                    padding-bottom: 20px;
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                    @include underline($lemonTree, -2, 2);                     
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    // &:active, &:focus {
+                    //     color: $black;
+                    //     // border-bottom: 2px solid $lemonTree;
+                    // }
+                }
+        
+                .paragraph-item.active {
+                    color: $black;
+                    border-bottom: 2px solid $lemonTree;
+                    margin-bottom: 8px;
+                }
+            }
+
+            .paragraph-desc {
+                @include row;
+                flex-direction: column;
+                align-items: flex-start; 
+                // margin-top: 20px; 
+                width: 470px;
+                position: relative;
+                top: 30px;
+                right: 70px;
+                display: none;
+                
+                .desc-title {
+                    font-family: $robotoBold;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    line-height: 1.3;
+                    width: 370px;
+                    margin-bottom: 50px;
+                }
+
+                .desc-detailed {
+                    line-height: 1.5;
+                }
+            }
+
+            // & > *:not(:first-child, :nth-child(2)) {
+            //     display: none;
+            // }
+            
+            .paragraph-desc.active {
+                display: flex;
+            }               
+        }
+
+        .background-rhombuses {
+            position: absolute;
+            z-index: -1;
+            top: -380px;
+            left: -57px;
+        }
+    }    
+}
