@@ -4696,3 +4696,16 @@ a {
     left: 50px;
   }
 }
+
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url('../images/up-arrow.svg') no-repeat;
+}
+
