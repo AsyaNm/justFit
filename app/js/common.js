@@ -7,41 +7,6 @@ $('#openFocCall').fancybox();
 $('.foc-partner-open').fancybox();
 $('.foc-info-open').fancybox();
 
-// YouTubePlayer
-// var tag = document.createElement('script');
-// tag.src = "https://www.youtube.com/player_api";
-// var firstScriptTag = document.getElementsByTagName('script')[0];
-// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-// var player;
-
-// function onYouTubePlayerAPIReady() {
-//   player = new YT.Player('ytplayer', {
-//     videoId: 'tNhFAiFzgl8',
-//     height: '120',
-//     width: '210'
-//     // playerVars: {
-//     //   controls: 0,
-//     //   // hl: 'ru-ru',
-//     //   // loop: 1,
-     
-//     //   // modestbranding: 1,
-//     //   showinfo: 0,
-//     //   rel: 0
-//     // // },
-//     // // events: {
-//     // //   'onReady': onPlayerReady,
-//     // }
-//   });
-// }
-
-// Slider
-// $('.thirdPage-slider').slick({
-// 	infinite: true,
-// 	arrows: true,
-// 	slidesToShow: 1,
-// 	slidesToScroll: 1
-// });
-
 //Nav-menu
 $( window ).resize(function() {
   mobileMenu();
