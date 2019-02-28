@@ -21,7 +21,7 @@ function mobileMenu() {
 // googleMap
 function initMap() {
 	// var uluru = {lat: -25.363, lng: 131.044};
-	var markerImage = '../images/map-marker-lemonTree-small-1.png';
+	var markerImage = 'app/images/map-marker-lemonTree-small-1.png';
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 3,
 		center: {
