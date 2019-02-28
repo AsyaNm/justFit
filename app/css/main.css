@@ -4126,6 +4126,11 @@ a {
     top: 15px;
     left: 66px;
   }
+
+  .scrollup {
+    right: 20px;
+    bottom: 20px;
+  }
 }
 
 @media (max-width: 575px) {
